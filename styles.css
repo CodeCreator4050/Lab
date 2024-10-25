@@ -1,9 +1,21 @@
-
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #692424;
     color: hsl(0, 0%, 20%);
+  }
+  .main-nav1 {
+    background-color: #555;
+    padding: 8px 0;
+    text-align: end;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .social-icons span,
+  .social-icons i {
+    padding-right: 20px;
   }
   
   h1, h2 {
@@ -27,7 +39,7 @@ body {
   }
   
   .hero {
-    background-image: url('images/AR.webp'); 
+    background-image: url('images/Mobile.png'); 
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -35,7 +47,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: Black;
   }
   
   .program {
@@ -76,4 +88,3 @@ body {
     background-color: #333;
     color: white;
   }
-  
