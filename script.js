@@ -1,44 +1,90 @@
-
-const speakers = [
-    {
-      name: "Gianni Infantino",
-      title: "FIFA President",
-      bio: "Leading FIFA to the 2022 World Cup with groundbreaking reforms.",
-      image: "images/Gianni.jpeg" 
-    },
-    {
-      name: "Lionel Messi",
-      title: "Argentinian Captain",
-      bio: "Inspirational leader, aiming to bring glory to Argentina.",
-      image: "images/Messi.webp"
-    },
-    {
-      name: "Didier Deschamps",
-      title: "Coach of France",
-      bio: "Coaching France towards another potential World Cup victory.",
-      image: "images/Didier.jpeg"
-    },
-    {
-      name: "Megan Rapinoe",
-      title: "Advocate for Equal Pay",
-      bio: "Speaking about equality and football’s power to drive change.",
-      image: "images/Meghan.jpeg"
-    }
-  ];
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #692424;
+    color: hsl(0, 0%, 20%);
+  }
+  .main-nav1 {
+    background-color: #555;
+    padding: 8px 0;
+    text-align: end;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+  }
   
-  const speakersContainer = document.getElementById('speakers-container');
+  .social-icons span,
+  .social-icons i {
+    padding-right: 20px;
+  }
   
-  speakers.forEach(speaker => {
-    const speakerCard = document.createElement('div');
-    speakerCard.classList.add('speaker-card');
-
-    speakerCard.innerHTML = `
-      <img src="${speaker.image}" alt="${speaker.name}" width="100%">
-      <h3>${speaker.name}</h3>
-      <p><strong>${speaker.title}</strong></p>
-      <p>${speaker.bio}</p>
-    `;
+  h1, h2 {
+    text-align: center;
+    font-weight: 600;
+  }
   
-    speakersContainer.appendChild(speakerCard);
-  });
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
   
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  
+  .hero {
+    background-image: url('images/Mobile.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: Black;
+  }
+  
+  .program {
+    padding: 50px;
+    background-color: #f0f0f0;
+  }
+  
+  .program-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .speakers {
+    padding: 50px;
+    background-color: #fff;
+  }
+  
+  #speakers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .speaker-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+  }
